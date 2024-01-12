@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "BungeeShade";
+    src: url("./fonts//BungeeShade-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("./fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Sabo";
+    src: url("./fonts/Sabo-Filled.otf");
+}
+
+@font-face {
+    font-family: "Gothic";
+    src: url("./fonts/GothicA1-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+    /* outline: yellow solid; */
+    /* height: 1vh; */
+    /* background: pink; */
+}
+
+/* https://graphicmama.com/blog/website-color-schemes/ */
+
+:root {
+    --white: #f9faf4;
+    --altwhite: rgb(218, 221, 202);
+    /* --slightorange: #f6d4b1; */
+    --slightorange: #0077b8;
+    --black: #4A6163;
+    --altblack: #324344;
+    --orange: #F9A66C;
+    --yellow: #FFC94B;
+    /* --red: #F17A7E; */
+    --red: #ffffff;
+    --lightgreen: #e6ebd2;
+}
+
+h1 {
+    font-size: 5vw
+}
+
+h2 {
+    font-size: 4vw;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 3vw;
+}
+
+h4 {
+    font-size: 2vw;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 4vw
+    }
+
+    h2 {
+        font-size: 3vw;
+        margin: 0px;
+    }
+
+    h3 {
+        font-size: 2vw;
+    }
+
+    h4 {
+        font-size: 1vw;
+    }
+}
+
+body {
+    background-color: var(--white);
+}
+
+.content {
+    margin: 40px 0px 40px 0px;
+}
+
+.introContainer {
+
+    background-color: var(--slightorange);
+    text-align: center;
+    /* background-image: linear-gradient(var(--yellow), var(--orange), var(--red));  */
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.maxHeight {
+    height: 100vh;
+}
+
+.introContainerFont {
+    color: var(--red);
+    /* font-weight: bold; */
+    font-family: "Sabo";
+}
+
+.headers {
+    /* color: var(--red); */
+    color: 	#4e595c;
+    font-family: "Ubuntu-Bold";
+}
+
+.title {
+    /* color: var(--orange); */
+    color: #0077b8;
+    font-family: "Ubuntu-Bold";
+}
+
+.decription {
+    color: var(--black);
+    font-family: "Montserrat";
+    line-height: 1.5vw;
+}
+
+.decription h4{
+    line-height: 1.5vw;
+}
+
+.image {
+    /* width: 100%; */
+    text-align: center;
+}
+
+.rainbow {
+    width: 100%;
+    height: 3px;
+    /* background: linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--orange), var(--red));; */
+    /* background: linear-gradient(to right, transparent 50%, var(--white) 50%), linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--orange), var(--red)); */
+    background: linear-gradient(to right, transparent 50%, var(--white) 50%), linear-gradient(to right, #6fcbfc8e, #56b3e6, #6eb5dbbd, #56b3e6, #6fcbfc8e);
+
+    background-size: 15px 2px, 100% 2px;
+    /* background: repeating-linear-gradient(90deg,red 0 5px ,#0000 0 10px) top; */
+    /* background-size: 100% 2px; */
+}
+
+.footer {
+    background: #333;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.link-icons {
+    height: 30px;
+}
+
+/* buitton */
+.btn_container {
+    border-radius: 50px;
+    background-color: #0077b8;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    background-color: #ffa125;
+    margin: 15px 0px 15px 0px;
+}
+.btn_container:active {
+    background-color: #ec780c;
+}
+
+.btn_container:hover {
+    background-color: #f19925;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
