@@ -129,7 +129,7 @@ body {
 
 .headers {
     /* color: var(--red); */
-    color: 	#4e595c;
+    color: 	#4f545e;
     font-family: "Ubuntu-Bold";
 }
 
@@ -186,6 +186,7 @@ body {
     color: white;
     background-color: #ffa125;
     margin: 15px 0px 15px 0px;
+    font-family: "Sabo";
 }
 .btn_container:active {
     background-color: #ec780c;
